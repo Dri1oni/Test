@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Gjenerimi i fjalëkalimit me 9 karaktere
+password=$(head /dev/urandom | tr -dc 'A-Za-z0-9' | head -c 9)
+
+# Shfaqja e fjalëkalimit
+echo "Fjalëkalimi i gjeneruar është: $password"
+
